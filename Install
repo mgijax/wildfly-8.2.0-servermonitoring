@@ -1,1 +1,1 @@
-./bin/add-user.sh mgiadmin password
+./bin/add-user.sh admin admin
