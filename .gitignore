@@ -1,4 +1,2 @@
-domain/configuration/mgmt-groups.properties
 domain/configuration/mgmt-users.properties
-standalone/configuration/mgmt-groups.properties
 standalone/configuration/mgmt-users.properties
