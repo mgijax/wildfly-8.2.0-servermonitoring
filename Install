@@ -1,3 +1,5 @@
 touch domain/configuration/mgmt-users.properties
 touch standalone/configuration/mgmt-users.properties
 ./bin/add-user.sh admin admin
+
+echo "Remember to setup your dbconfig.properties file with the correct connection info"
