@@ -1,2 +1,3 @@
 domain/configuration/mgmt-users.properties
 standalone/configuration/mgmt-users.properties
+dbconfig.properties
