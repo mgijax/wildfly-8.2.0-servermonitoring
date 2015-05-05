@@ -138,6 +138,27 @@
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:datasources:2.0">
             <datasources>
+                <datasource jta="false" jndi-name="java:jboss/datasources/ServerMonitoring" pool-name="ServerMonitoring" enabled="true" use-ccm="false">
+                    <connection-url>jdbc:postgresql://mgi-testdb3:5432/ServerMonitoring</connection-url>
+                    <driver>postgres</driver>
+                    <security>
+                        <user-name>mgd_dbo</user-name>
+                        <password>db0dev</password>
+                    </security>
+                    <validation>
+                        <validate-on-match>false</validate-on-match>
+                        <background-validation>false</background-validation>
+                    </validation>
+                    <statement>
+                        <share-prepared-statements>false</share-prepared-statements>
+                    </statement>
+                </datasource>
+                <drivers>
+                    <driver name="postgres" module="org.postgres">
+                        <driver-class>org.postgresql.Driver</driver-class>
+                        <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+                    </driver>
+                </drivers>
                 <datasource jndi-name="java:jboss/datasources/ExampleDS" pool-name="ExampleDS" enabled="true" use-java-context="true">
                     <connection-url>jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE</connection-url>
                     <driver>h2</driver>
