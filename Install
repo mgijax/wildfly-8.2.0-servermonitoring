@@ -1,7 +1,10 @@
 touch domain/configuration/mgmt-users.properties
 touch standalone/configuration/mgmt-users.properties
-./bin/add-user.sh admin admin
-
+#./bin/add-user.sh admin admin
+echo 
 echo "Remember to setup your dbconfig.properties file with the correct connection info"
-
+echo "db.hostname=localhost"
+echo "db.username=username"
+echo "db.password=password"
+echo "db.database=databasename"
 
