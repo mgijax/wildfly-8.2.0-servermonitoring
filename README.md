@@ -40,7 +40,10 @@ db.username=usernam3
 db.password=p4ssword
 api.hostname=localhost
 ```
-Set the api.hostname equal to the hostname that you will be running this server on, and this will also be the name that the <a href="https://github.com/mgijax/WatchDog">Watch Dog Clients</a> are going to try to connect to.
+Set the api.hostname equal to the hostname that you will be running this server on, and this will also be the name that the <a href="https://github.com/mgijax/WatchDog">Watch Dog Clients</a> are going to try to connect to. This may or may not need to include the port number. If running on a different port then port 80 the port number will need to be included:
+```
+api.hostname=localhost:8080
+```
 
 Running the server
 ------------------
